@@ -184,7 +184,7 @@ The fastest way to test PaperQA2 is via the CLI. First navigate to a directory w
 $ pqa ask 'What manufacturing challenges are unique to bispecific antibodies?'
 ```
 
-You will see PaperQA2 index your local PDF files, gathering the necessary metadata for each of them (using [Crossref](https://www.crossref.org/) and [Semantic Scholar](https://www.semanticscholar.org/)),
+You will see PaperQA2 index your local PDF files, gathering the necessary metadata for each of them (using [Crossref](https://www.crossref.org/) (General terms has been changed therefore Crossref admission is necessary based on your utility) and [Semantic Scholar] (https://www.semanticscholar.org/)),
 search over that index, then break the files into chunked evidence contexts, rank them, and ultimately generate an answer. The next time this directory is queried, your index will already be built (save for any differences detected, like new added papers), so it will skip the indexing and chunking steps.
 
 All prior answers will be indexed and stored, you can view them by querying via the `search` subcommand, or access them yourself in your `PQA_HOME` directory, which defaults to `~/.pqa/`.
