@@ -15,7 +15,8 @@ from typing import cast
 from unittest.mock import AsyncMock, patch
 from uuid import uuid4
 
-import ldp.agent
+
+import ldp.agent 
 import pytest
 from aviary.core import (
     Environment,
@@ -61,6 +62,9 @@ from paperqa.prompts import CANNOT_ANSWER_PHRASE, CONTEXT_INNER_PROMPT_NOT_DETAI
 from paperqa.settings import AgentSettings, IndexSettings, Settings
 from paperqa.types import Context, Doc, PQASession, Text
 from paperqa.utils import encode_id, extract_thought, get_year, md5sum
+
+logger = logging.getLogger(__name__)  
+
 
 
 @pytest.mark.asyncio
